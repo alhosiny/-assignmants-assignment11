@@ -4,7 +4,7 @@ Task = function(category, title, priority, estimate){
         this.priority = priority;
         this.estimate = estimate;
         this.spent = 0;
-        this.remaining = 1.5;
+        this.remaining = estimate;
 }
 Task.prototype.track = function(spent){
     if(spent > 0){
